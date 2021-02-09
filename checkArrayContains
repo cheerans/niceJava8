@@ -1,0 +1,6 @@
+boolean result = someObjects.stream().anyMatch(obj -> some_condition_met);
+
+
+#to get the object that matches
+Optional<SomeObject> result =
+    someObjects.stream().filter(obj -> some_condition_met).findFirst();
